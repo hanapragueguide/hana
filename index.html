@@ -74,7 +74,7 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             margin-bottom: 15px; /* For mobile */
         }
-        /* Přidáno: Specifická velikost pro HanaPragueGuide1.jpg */
+        /* Added: Specific size for HanaPragueGuide1.jpg */
         .content-block img[src="HanaPragueGuide1.jpg"] {
             max-width: 320px;
             height: auto;
@@ -106,6 +106,62 @@
             position: absolute;
             left: 0;
             font-weight: bold;
+        }
+        /* New styles for pricing section */
+        .pricing-table {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .price-card {
+            background-color: #fcfcfc;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease-in-out;
+            flex-grow: 1; /* Ensures cards grow to fill available space evenly */
+        }
+        .price-card:hover {
+            transform: translateY(-5px);
+        }
+        .price-card h3 {
+            font-family: 'Lora', serif;
+            color: #5d4037;
+            font-size: 1.6em;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        .price-card p {
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .price-card .price {
+            font-family: 'Lora', serif;
+            font-size: 2.2em;
+            color: #8d6e63;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .price-card .price small {
+            font-size: 0.6em;
+            color: #999;
+            display: block;
+            margin-top: 5px;
+        }
+        .price-note {
+            text-align: center;
+            font-size: 1em;
+            color: #666;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f0f0f0;
+            border-left: 5px solid #8d6e63;
+            border-radius: 5px;
         }
         .contact-info {
             text-align: center;
@@ -156,6 +212,11 @@
                 margin-bottom: 0;
             }
         }
+        @media (max-width: 767px) {
+            .pricing-table {
+                grid-template-columns: 1fr; /* Stack columns on small screens */
+            }
+        }
     </style>
 </head>
 <body>
@@ -174,7 +235,7 @@
             <div class="content-block left">
                 <div class="content-text">
                     <p>Imagine leisurely wandering through Prague's historic Old Town, uncovering the fascinating stories behind its magnificent architecture, or discovering hidden gems only a local knows. With me, you won't just see the sights; you'll truly experience the soul of this beautiful country.</p>
-                    <p>My tours are designed for discerning travelers who appreciate comfort, flexibility, and a deep dive into culture and history. Whether your passion is art, history, local cuisine, or simply soaking in the atmosphere, your tour is meticulously planned for a memorable and meaningful journey.</p>
+                    <p>My tours are designed for discerning travelers who appreciate comfort, flexibility, and a deep dive into culture and history. Whether your passion is art, history, local cuisine, or simply soaking in the atmosphere, your tour is planned for a memorable and meaningful journey.</p>
                 </div>
                 <img src="HanaMain.jpg" alt="Hana Kasalova">
             </div>
@@ -184,13 +245,47 @@
                 <div class="content-text">
                     <h3>Your Journey Includes:</h3>
                     <ul>
-                        <li><p><strong>Custom Itineraries:</strong> From iconic Prague landmarks to fairytale Bohemian castles, your trip is designed to your exact specifications and comfort level.</p></li>
+                        <li><p><strong>Customized Itineraries:</strong> From iconic Prague landmarks to fairytale Bohemian castles, your trip is designed to your exact specifications and comfort level.</p></li>
                         <li><p><strong>Comfort & Convenience:</strong> Enjoy a relaxed pace, comfortable transportation, and flexible schedules. Your comfort is my top priority.</p></li>
                         <li><p><strong>Insider Stories & Local Expertise:</strong> Gain authentic insights, captivating tales, and local tips that truly bring history and culture alive.</p></li>
                         <li><p><strong>Beyond Prague:</strong> Easily explore picturesque towns like Český Krumlov, Kutná Hora, or Karlovy Vary – all arranged for you.</p></li>
-                        <li><p><strong>Seamless Planning:</strong> Every detail, from arrival to departure, is expertly managed, allowing you to simply relax and enjoy.</p></li>
                     </ul>
                 </div>
+            </div>
+        </section>
+
+        <!-- New Section for Tours and Pricing -->
+        <section class="section">
+            <h2>My Tours & Pricing</h2>
+            <p style="text-align: center; font-size: 1.1em; color: #666; max-width: 700px; margin: 0 auto 30px auto;">
+                Among the most popular options are my personalized 3-hour Prague walking tours.
+                Each package is designed to show you the best of the city at a comfortable pace.
+            </p>
+
+            <div class="pricing-table">
+                <div class="price-card">
+                    <h3>3 Hours - Left River Bank</h3>
+                    <p>Includes the majestic Prague Castle and the charming Lesser Town.</p>
+                    <div class="price">3900 CZK <small>(180€)</small></div>
+                </div>
+
+                <div class="price-card">
+                    <h3>3 Hours - Right River Bank</h3>
+                    <p>Discover the historic Jewish Quarter (Josefov) and the amazing Old Town.</p>
+                    <div class="price">3900 CZK <small>(180€)</small></div>
+                </div>
+
+                <div class="price-card">
+                    <h3>3 Hours - Off the Beaten Track</h3>
+                    <p>Explore the historic Vyšehrad on the rocky cliff and the bustling New Town.</p>
+                    <div class="price">3900 CZK <small>(180€)</small></div>
+                </div>
+            </div>
+
+            <div class="price-note">
+                <p><strong>Additional hour to any package: 1300 CZK (60€)</strong></p>
+                <p>Feel free to inquire about pricing for trips to other destinations across the Czech Republic.</p>
+                <p>Prices do not include admission fees (if any) or transportation.</p>
             </div>
         </section>
 
@@ -198,7 +293,7 @@
             <h2>Ready to Plan Your Unforgettable Trip?</h2>
             <div class="content-block left">
                 <div class="content-text">
-                    <p>Eager for a truly bespoke adventure? Contact me today to discuss your vision for exploring the Czech Republic. We'll craft an itinerary that perfectly aligns with your expectations, ensuring a rich, enjoyable, and supremely comfortable travel experience.</p>
+                    
                     <p>Let's design your ideal private tour. Your personalized journey through the heart of Europe awaits!</p>
                 </div>
                 <img src="HanaWinter.png" alt="Hana Kasalová, friendly professional guide">
@@ -218,5 +313,4 @@
         </footer>
     </div>
 </body>
-
 </html>

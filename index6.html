@@ -122,6 +122,43 @@
     .special-tour-card h3 {
         color: #a98b4f;
     }
+
+    .recommendation-card {
+        background-color: #fff;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        padding: 25px;
+        text-align: center;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        margin: 0 auto;
+        max-width: 500px;
+    }
+
+    .recommendation-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    .recommendation-card a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .recommendation-button {
+        display: inline-block;
+        background-color: #8d6e63;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-top: 15px;
+        font-weight: 600;
+        transition: background-color 0.2s;
+    }
+
+    .recommendation-card a:hover .recommendation-button {
+        background-color: #5d4037;
+    }
 </style>
 </head>
 <body>
@@ -208,6 +245,20 @@ Code
             <p><strong>Additional hour to any private tour: 1300 CZK (or 60€)</strong></p>
             <p>Feel free to ask about pricing for a fully customized tour, trips across the Czech Republic, or for larger groups.</p>
             <p>Prices do not include admission fees (if any) or transportation.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>My Tip for a Great Experience</h2>
+        <p style="text-align: center; font-size: 1.1em; color: #666; max-width: 700px; margin: 0 auto 30px auto;">
+            For a unique perspective of Prague, I highly recommend a private boat trip on the Vltava river. It's a wonderful way to see the city's beauty from a different angle.
+        </p>
+        <div class="recommendation-card">
+            <a href="https://presidentialcruises.com/" target="_blank" rel="noopener noreferrer">
+                <h3>Presidential Cruises</h3>
+                <p>Enjoy a luxurious and private cruise on the Vltava river. See Prague's famous landmarks from the comfort of a beautiful boat. An unforgettable experience for couples, families, and small groups.</p>
+                <span class="recommendation-button">Visit Website</span>
+            </a>
         </div>
     </section>
 

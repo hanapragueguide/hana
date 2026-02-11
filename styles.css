@@ -79,7 +79,9 @@ html.dark {
 /* ═══════════════════════════════════════════════
    RESET & BASE
    ═══════════════════════════════════════════════ */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -112,7 +114,9 @@ a {
     transition: color var(--transition);
 }
 
-a:hover { color: var(--color-accent-hover); }
+a:hover {
+    color: var(--color-accent-hover);
+}
 
 /* ═══════════════════════════════════════════════
    STICKY NAVIGATION
@@ -179,8 +183,13 @@ a:hover { color: var(--color-accent-hover); }
     transition: width var(--transition);
 }
 
-.nav-links a:hover { color: var(--color-heading); }
-.nav-links a:hover::after { width: 100%; }
+.nav-links a:hover {
+    color: var(--color-heading);
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
 
 /* Theme toggle button */
 .theme-toggle {
@@ -236,13 +245,14 @@ a:hover { color: var(--color-accent-hover); }
     justify-content: center;
     text-align: center;
     overflow: hidden;
-    margin-top: 68px; /* navbar height */
+    margin-top: 68px;
+    /* navbar height */
 }
 
 .hero-bg {
     position: absolute;
     inset: 0;
-    background-image: url('hrad.png');
+    background-image: url('hrad_hero.webp');
     background-size: cover;
     background-position: center 40%;
     z-index: 0;
@@ -269,7 +279,7 @@ a:hover { color: var(--color-accent-hover); }
     color: #FFFFFF;
     margin-bottom: 16px;
     line-height: 1.15;
-    text-shadow: 0 2px 20px rgba(0,0,0,0.25);
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.25);
 }
 
 .hero .slogan {
@@ -308,12 +318,12 @@ a:hover { color: var(--color-accent-hover); }
 .btn-outline {
     background: transparent;
     color: #fff;
-    border: 2px solid rgba(255,255,255,0.5);
+    border: 2px solid rgba(255, 255, 255, 0.5);
     margin-left: 12px;
 }
 
 .btn-outline:hover {
-    background: rgba(255,255,255,0.15);
+    background: rgba(255, 255, 255, 0.15);
     border-color: #fff;
     color: #fff;
 }
@@ -482,7 +492,9 @@ a:hover { color: var(--color-accent-hover); }
     border-color: var(--color-accent);
 }
 
-.price-card:hover::before { opacity: 1; }
+.price-card:hover::before {
+    opacity: 1;
+}
 
 .price-card a {
     text-decoration: none;
@@ -845,7 +857,9 @@ a:hover { color: var(--color-accent-hover); }
     transition: color var(--transition);
 }
 
-.contact-link:hover { color: var(--color-gold); }
+.contact-link:hover {
+    color: var(--color-gold);
+}
 
 .contact-link .contact-icon {
     font-size: 1.3em;
@@ -989,7 +1003,10 @@ footer {
    ACCESSIBILITY
    ═══════════════════════════════════════════════ */
 @media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after {
+
+    *,
+    *::before,
+    *::after {
         animation-duration: 0.01ms !important;
         transition-duration: 0.01ms !important;
     }

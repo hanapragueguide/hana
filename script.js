@@ -18,12 +18,13 @@
         }
     }
 
-    // Init: localStorage → system preference → light
+    // Init: Default to light mode unless explicitly saved as dark
     const saved = localStorage.getItem(STORAGE_KEY);
     if (saved) {
         setTheme(saved === 'dark');
     } else {
-        setTheme(window.matchMedia('(prefers-color-scheme: dark)').matches);
+        // Default to light mode (false) regardless of system preference
+        setTheme(false);
     }
 
     // Listen to system preference changes

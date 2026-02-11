@@ -94,6 +94,7 @@ html {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    background-color: var(--bg-page);
 }
 
 body {
@@ -255,9 +256,7 @@ a:hover {
     justify-content: center;
     text-align: center;
     overflow: hidden;
-    margin-top: 68px;
-    /* navbar height */
-    background-color: var(--bg-page);
+    /* Margin removed to prevent gap above navbar */
 }
 
 .hero-bg {

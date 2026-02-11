@@ -239,6 +239,7 @@ a:hover {
    ═══════════════════════════════════════════════ */
 .hero {
     position: relative;
+    width: 100%;
     min-height: 85vh;
     display: flex;
     align-items: center;
@@ -255,6 +256,7 @@ a:hover {
     background-image: url('hrad_hero.webp');
     background-size: cover;
     background-position: center 40%;
+    background-repeat: no-repeat;
     z-index: 0;
 }
 

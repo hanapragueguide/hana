@@ -462,6 +462,43 @@ a:hover {
 }
 
 /* ═══════════════════════════════════════════════
+   BUSINESS PARTNERS
+   ═══════════════════════════════════════════════ */
+.business-partners-card {
+    padding: clamp(28px, 5vw, 52px);
+    background: var(--bg-note);
+    border: 1px solid var(--color-border);
+    border-top: 4px solid var(--color-gold);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    transition: background var(--transition), border-color var(--transition);
+}
+
+.business-partners-card .section-header {
+    margin-bottom: 28px;
+}
+
+.business-partners-card p {
+    max-width: 720px;
+    margin: 0 auto;
+    color: var(--text-secondary);
+    font-size: 1.05em;
+    transition: color var(--transition);
+}
+
+.business-partners-card .btn {
+    margin-top: 24px;
+}
+
+.business-partners-card .business-partners-closing {
+    margin-top: 24px;
+    font-family: 'Lora', serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: var(--color-heading);
+}
+
+/* ═══════════════════════════════════════════════
    PRICING CARDS
    ═══════════════════════════════════════════════ */
 .pricing-grid {

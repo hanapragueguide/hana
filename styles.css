@@ -486,6 +486,10 @@ a:hover {
     transition: color var(--transition);
 }
 
+.business-partners-card .btn {
+    margin-top: 24px;
+}
+
 .business-partners-card .business-partners-closing {
     margin-top: 24px;
     font-family: 'Lora', serif;

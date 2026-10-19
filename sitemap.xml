@@ -2,8 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://hanapragueguide.com/</loc>
-    <lastmod>2024-05-21</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://hanapragueguide.com/cs/provazeni-pro-firmy/</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://hanapragueguide.com/business-prague-tours/</loc>
+    <lastmod>2026-10-19</lastmod>
   </url>
 </urlset>
